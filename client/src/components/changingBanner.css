@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .banner-history-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-image: url(https://i.pinimg.com/564x/2e/ff/61/2eff61b28d2d0954dff810f0f153cab4.jpg);
+    border-bottom: 2px solid #ff0000;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ff0000;
+    border-left: 2px solid #ffffff;
+  }
+  
+  .changing-banner-container-home {
+    margin: 10px auto;
+    max-width: 250px;
+    position: relative;
+  }
+  
+  .changing-banner-home {
+    position: relative;
+  }
+  
+  .changing-banner-imghome {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .explore-button {
+    padding: 8px 10px;
+    border: none;
+    font-family: monospace;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+  }
+  
+  .explore-button:hover {
+    background-color: #e03b00;
+    color: #ffffff;
+  }
+  
+  .history-section,
+  .manga-info-section {
+    max-width: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+  }
+  
+  .history-section h3,
+  .manga-info-section h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: monospace;
+    text-decoration: underline;
+    color: rgb(247, 247, 247);
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #ff0000;
+    border-right: 2px solid #ff0000;
+    border-left: 2px solid #ff0000;
+    background-color: #000000;
+    border-radius: 5px;
+  }
+  
+  .history-section p,
+  .manga-info-section p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .flag-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .japan-flag {
+    width: 40px;
+    height: 25px;
+    margin-right: 10px;
+  }
+  
+  .flag-container span {
+    font-size: 1rem;
+    color: #ff8c00;
+    font-size: 20px;
+    font-family: monospace;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .banner-history-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .history-section,
+    .manga-info-section {
+      margin-top: 20px;
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .changing-banner-container {
+      max-width: 100%;
+    }
+  
+    .explore-button {
+      font-size: 0.7rem;
+      padding: 5px 10px;
+    }
+  }
+  

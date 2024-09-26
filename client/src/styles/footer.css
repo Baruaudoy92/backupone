@@ -1,0 +1,72 @@
+/* General Footer Styles */
+footer {
+    background: radial-gradient(circle, #ffb3e6, #e0aaff); /* Radial gradient background */
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid #ff66b2; /* Bright pink border */
+    border-bottom: 2px solid #ff66b2; /* Matching bottom border */
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo img {
+    width: 120px; /* Larger logo */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow for 3D effect */
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #ff66b2; /* Bright pink color */
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #ffffff; /* White color on hover */
+    text-shadow: 0 0 5px #ff66b2; /* Glowing effect */
+  }
+  
+  .footer-social {
+    margin-bottom: 20px;
+  }
+  
+  .social-link {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  .social-link img {
+    width: 35px; /* Slightly larger icons */
+    height: 35px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .social-link img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px #ff66b2); /* Glow effect */
+  }
+  
+  .footer-copy {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  

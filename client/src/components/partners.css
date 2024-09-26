@@ -1,0 +1,17 @@
+.partners-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .logo-item img {
+    max-width: 100px;
+    height: auto;
+  }
+  

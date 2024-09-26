@@ -1,0 +1,63 @@
+.mangas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items in the container */
+  gap: 20px; /* Space between items */
+  margin-top: 1px; /* Space above the container */
+  background-image: url(https://i.pinimg.com/564x/2e/ff/61/2eff61b28d2d0954dff810f0f153cab4.jpg);
+}
+
+.manga-item-manga {
+  width: 220px; /* Fixed width for consistency */
+  padding: 15px; /* Padding inside each item */
+  text-align: center; /* Center text inside the item */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+  cursor: pointer; /* Pointer cursor on hover */
+  border: 1px solid #ffffff; /* Light border for definition */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #030303;
+}
+
+.manga-item-manga:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.manga-item-manga img {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+.manga-para-1 {
+  margin: 10px 0; /* Margin above and below paragraphs */
+  font-family: monospace;
+  font-size: 1rem; /* Font size */
+  color: #030303; /* Dark gray text color */
+  background-color: #fff;
+}
+.manga-para-2 {
+  margin: 10px 0; /* Margin above and below paragraphs */
+  font-family: monospace;
+  font-size: 0.6rem; /* Font size */
+  color: #030303; /* Dark gray text color */
+  background-color: #fff;
+}
+
+/* Button styles */
+.btn-btn-manga {
+  padding: 10px 15px; /* Padding for the button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  font-family:monospace;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  margin-top: 10px; /* Margin for spacing from text */  
+  color: #fff; /* White text */
+}
+
+/* Hover State */
+.btn-btn-manga:hover {
+  background-color: #d62b01; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}

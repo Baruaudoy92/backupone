@@ -1,0 +1,207 @@
+/* General Reset and Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Banner Section */
+.banner {
+  background: url('https://giffiles.alphacoders.com/346/3465.gif') 
+  no-repeat center center;
+  background-size: cover;
+  padding: 60px 15px;
+  font-family: monospace;
+  text-align: center;
+  color: #604a0e;
+}
+
+.banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1.1rem;
+}
+
+.newsofhome{
+  margin-left: 600px;
+  font-size: 10px;
+  font-weight: 900;
+  font-style: italic;
+  font-family: monospace;
+  color: #000000;
+  text-decoration: none;
+  border-left: 3px solid #ff0000;
+  border-radius: 5px;
+}
+
+/* Manga Section */
+.manga-gallery {
+  padding: 20px;
+  text-align: center;
+}
+
+.manga-gallery h2 {
+  font-family: monospace;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.manga-grid-1 {
+  display: grid;
+  font-family: monospace;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.manga-item-home {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.manga-item-home img {
+  width: 100%;
+  height: auto;
+}
+
+.manga-item-home p {
+  padding: 10px;
+}
+
+.manga-item-home:hover {
+  transform: scale(1.05);
+}
+
+/* Poster Section with Mini Manga */
+.poster-with-manga {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.poster-section {
+  text-align: center;
+  padding: 20px;
+  background-image: url(https://i.pinimg.com/originals/46/eb/74/46eb745e6ca6b65e368649965e2c000c.jpg);
+  border-radius: 20px;
+  background-size: cover;
+  border: 2px solid #ff0000;
+}
+.animeup{
+  color: #fafafa;
+}
+
+.poster-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.poster-img:hover {
+  transform: scale(1.05);
+}
+
+.mini-manga-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.mini-manga-section h2 {
+  font-family: monospace;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.mini-manga-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.mini-manga-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mini-manga-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .manga-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Shrinks columns on medium-sized screens */
+  }
+
+  .poster-with-manga {
+    grid-template-columns: 1fr; /* Stacks the poster and manga sections vertically */
+  }
+
+  .banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .newsofhome{
+    margin-left: 0px;
+    font-size: 25px;
+    font-family: monospace;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .manga-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive for tablet-size screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .manga-gallery h2 {
+    font-size: 1.5rem;
+  }
+
+  .manga-grid {
+    grid-template-columns: 1fr; /* Stacks manga items one under the other in small screens */
+  }
+
+  .manga-item img {
+    width: 100%; /* Ensure full-width images */
+  }
+
+  .poster-img {
+    max-width: 100%;
+  }
+
+  .mini-manga-grid {
+    grid-template-columns: repeat(2, 1fr); /* Adjusts to two columns on small screens */
+  }
+}

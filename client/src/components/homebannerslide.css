@@ -1,0 +1,104 @@
+/* Container for the entire banner and button */
+.banner-container_home {
+  position: relative;
+  width: 100%;
+  max-height: 400px; /* Increased banner height */
+  overflow: hidden;
+  background-color: black;
+  border-bottom: 1px solid #ff0000;
+  border-top: 1px solid #ff0000;
+  border-right: 1px solid #ff0000;
+  border-left: 1px solid #ff0000;
+ }
+
+/* Image styles inside the slider */
+.slider-image_home img {
+  width: 50%;
+  max-height: 790px; /* Increased image height */
+  margin-left: 190px;
+  object-fit: cover;
+  border-radius: 300px;
+  transition: transform 0.5s ease-in-out;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+}
+
+/* Hover effect for images */
+.slider-image_home img:hover {
+  transform: scale(1.05);
+}
+
+/* Button container styling, positioned to the right of the banner */
+.banner-button-container_home {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+
+/* Styling for the 'Explore News' button */
+.banner-button_01 {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ff0000;
+  padding: 15px 30px; /* Increased padding for larger button */
+  border: 2px solid #ff4b2b;
+  border-radius: 8px;
+  font-size: 18px; /* Increased font size */
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover effect */
+.banner-button_01:hover {
+  background-color: #ff4b2b;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .banner-container_home {
+    max-height: 500px; /* Reduced height for mobile */
+  }
+
+  .banner-button-container_home {
+    right: 10%;
+  }
+
+  .banner-button_01 {
+    padding: 12px 25px; /* Reduced padding */
+    font-size: 16px; /* Reduced font size */
+  }
+
+  .slider-image_home img {
+    width: 80%;
+    height: auto;
+    margin-left: 20px;
+    max-height: 350px; /* Increased image height */
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+/* Extra small screens (mobile) */
+@media screen and (max-width: 480px) {
+  .banner-container {
+    max-height: 400px; /* Further reduced height for extra small screens */
+  }
+
+  .banner-button-container {
+    right: 8%;
+  }
+
+  .banner-button {
+    padding: 10px 20px; /* Further reduced padding */
+    font-size: 14px; /* Further reduced font size */
+  }
+}

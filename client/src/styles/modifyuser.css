@@ -1,0 +1,92 @@
+.register_page {
+    display: flex; /* Flex layout for the whole page */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 115vh; /* Full height of the viewport */
+    background-image: url(https://i.pinimg.com/564x/2e/ff/61/2eff61b28d2d0954dff810f0f153cab4.jpg);
+}
+
+.card_page {
+    display: flex; /* Flex layout for card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Hide overflow */
+    width: 90%; /* Responsive width */
+    max-width: 800px; /* Max width for larger screens */
+}
+
+.left {
+    background-color: #86560a; /* Green background for left side */
+    color: white; /* White text color */
+    padding: 20px; /* Padding for left side */
+    flex: 1; /* Take up equal space */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+}
+
+.right {
+    padding: 20px; /* Padding for right side */
+    flex: 1; /* Take up equal space */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.modify1{
+    margin: 0 0 10px; /* Remove margin, add space below */
+    color: #86560a;
+    font-family: monospace;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.theone {
+    font-size: 3rem; /* Size for main title */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    text-decoration: overline;
+}
+
+h2 {
+    font-size: 1.5rem; /* Size for form title */
+}
+
+p, span {
+    margin: 5px 0; /* Space above and below text */
+    font-family: monospace;
+}
+
+form {
+    display: flex; /* Flex layout for form */
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 10px; /* Space between inputs */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"] {
+    padding: 10px; /* Padding inside inputs */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #e600ff; /* Light border */
+    font-size: 1rem; /* Font size */
+}
+
+input:focus {
+    border-color: #000000; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.modifyuser {
+    padding: 10px; /* Padding inside button */
+    background-color: #fff700; /* Button color */
+    color: rgb(0, 0, 0); /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+}
+
+.modifyuser:hover {
+    background-color: #5fda0d; /* Darker green on hover */
+}

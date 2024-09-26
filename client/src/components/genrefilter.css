@@ -1,0 +1,55 @@
+.genre-filter {
+    margin: 20px 0;
+    text-align: center; /* Center the filter label */
+}
+
+.genre-filter select {
+    padding: 10px; /* Increased padding for better touch targets */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9; /* Light background for the dropdown */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.genre-filter select:hover {
+    border-color: #4CAF50; /* Change border color on hover */
+}
+
+.mangas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center items in the container */
+}
+
+.manga-item-manga {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px; /* Increased padding for a better look */
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    width: 200px; /* Set a fixed width for items */
+}
+
+.manga-item-manga:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.manga-item-manga img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.manga-para-1 {
+    font-weight: bold;
+    margin: 10px 0 5px; /* Adjust margins for spacing */
+}
+
+.manga-para-2 {
+    color: #777; /* Grey color for genre text */
+    margin-bottom: 10px; /* Space below genre text */
+}

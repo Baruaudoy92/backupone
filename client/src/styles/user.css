@@ -1,0 +1,114 @@
+/* Container for user list */
+.user-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Title Styling */
+.utilisateur {
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: bold;
+  color: #e63946;
+  text-transform: uppercase;
+}
+
+/* Individual user item */
+.user-item {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.user-item:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph styling within user items */
+.user-item p {
+  margin: 10px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Button container for actions */
+.user-item div {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Primary button for actions (like delete) */
+.user-item button {
+  margin-right: 15px;
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.user-item button:hover {
+  background-color: #d62828;
+}
+
+/* Link styled as a button */
+.user-item a {
+  text-decoration: none;
+  background-color: #38b000;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+.user-item a:hover {
+  background-color: #006d77;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+
+/* Center align items in the container */
+.user-container {
+    padding: 20px;
+}
+
+.user-item {
+    padding: 15px;
+}
+
+.user-item div {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-item button,
+.user-item a {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+}
+
+/* Additional styles for larger screens */
+@media screen and (min-width: 769px) {
+.user-container {
+    max-width: 1000px;
+}
+}
